@@ -102,7 +102,8 @@ contract CredentialBox is IssuerHelper {
 
     // statusType 확인해서 백신접종 여부 확인
     function checkCredential(address _vaccineAddress) public view returns (bool){
-         require(credentials[_vaccineAddress].statusType >=1) return true;
+         require(credentials[_vaccineAddress].statusType >=1); 
+	 return true;
     }
 
     // 백신 종류 확인
